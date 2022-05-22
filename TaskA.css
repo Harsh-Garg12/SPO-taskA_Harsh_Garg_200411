@@ -1,0 +1,80 @@
+.App {
+  text-align: center;
+}
+
+p{
+  margin-bottom: 2px !important;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+input.larger {
+  width: 30px;
+  height: 30px;
+  background-color: #ececec;
+}
+
+input.larger1
+{
+height:27px;
+width: 27px;
+background: #ececec;
+border: none;
+}
+.text-right{
+  margin-left: -151px;
+}
+.font_size{
+  font-size: 10px;
+}
+button.my-btn{
+  width: 182px;
+  height: 42px;
+  border-radius: 26px;
+  font-size: 24px;
+  padding: 3px;
+}
+
+.font-style{
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+.form-control {
+  font-family: system-ui, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.1;
+}
+.my-style{
+ border: 1px; 
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
