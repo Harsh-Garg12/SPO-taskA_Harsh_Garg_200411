@@ -10,6 +10,8 @@ function App() {
     const [Jam,setThird]=useState(true);
     const [Cat,setFourth]=useState(true);
 
+    const [finish,setFifth]=useState(true);
+
     // state={
     //   Coursenames:{
     //     BTBSDoubleMajor_All:false,
@@ -20,31 +22,37 @@ function App() {
     //   }
     // }
 
-
+  
 
     const handleChange=(data)=>{
       if(data == "advance")
       {
       if(advance==true){
-        console.log(data,"Our Value")
+        console.log(data,"SELECT ALL BRANCHES AND PROGRAMMES COMING FROM JEE ADVANCE")
       }
       }
       if (data == "Gate")
       {  
       if(Gate==true){
-        console.log(data,"Our Value")
+        console.log(data,"SELECT ALL BRANCHES AND PROGRAMMES COMING FROM GATE")
       }
     }
     if(data == "Jam")
     {
     if(Jam==true){
-      console.log(data,"Our Value")
+      console.log(data,"SELECT ALL BRANCHES AND PROGRAMMES COMING FROM JAM")
     }
     }
     if (data == "Cat")
     {  
     if(Cat==true){
-      console.log(data,"Our Value")
+      console.log(data,"SELECT ALL BRANCHES AND PROGRAMMES COMING FROM CAT")
+    }
+  }
+    if (data == "finish")
+    {  
+    if(finish==true){
+      console.log(data,"FORM SUCCESSFULLY SUBMIT")
     }
   }
 
@@ -56,6 +64,8 @@ function App() {
         <div class="row mt-3">
           <div class='col-md-12'><h6>STEP 2/5 (Eligibility Matrix)</h6></div>
         </div>
+
+        {/* ENTRANCE EXAM */}
 
         <div class="row">
           <div class="col-md-4 text-center"><input type="radio" name="same" value={advance} onChange={()=>handleChange("advance")} class="form-check-input larger"/></div>
@@ -80,6 +90,8 @@ function App() {
         </div>
 
         </div>
+
+      {/* Eligibility Matrix */}
 
         <div class="container mt-3">
             <table class="table table-bordered my-style">
@@ -307,6 +319,9 @@ function App() {
             </table>
          </div>
 
+      
+      {/* MEANING OF ABBREVIATIONS */}
+
       <div class="container">
       <div class="row mt-3 font_size">
         <div class="col-md-4">
@@ -349,7 +364,7 @@ function App() {
       
       <div class="container">
       <div class="row mt-3">
-      <div class="col-md-6"><button type="button" /*ssonClick={()=>setPrint(true)}*/ class="btn btn-success btn-lg my-btn">Next</button></div>
+      <div class="col-md-6"><button type="button" value={finish} onChange={()=>handleChange("finish")} class="btn btn-success btn-lg my-btn">Next</button></div>
       <div class="col-md-6"><button type="button" class="btn btn-danger btn-lg my-btn">Reset</button></div>
       </div>
       </div>
